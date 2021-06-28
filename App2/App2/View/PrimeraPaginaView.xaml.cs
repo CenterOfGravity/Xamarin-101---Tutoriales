@@ -19,7 +19,7 @@ namespace App2.View
 
         private async void Button1_Clicked(object sender, EventArgs e)
         {
-            await Application.Current.MainPage.Navigation.PushModalAsync(new SegundaPaginaView());
+            await Application.Current.MainPage.Navigation.PushAsync(new SegundaPaginaView());
         }
     }
 }

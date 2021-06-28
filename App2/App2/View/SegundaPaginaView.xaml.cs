@@ -19,7 +19,7 @@ namespace App2.View
 
         private async void Button2_Clicked(object sender, EventArgs e)
         {
-            await Application.Current.MainPage.Navigation.PopModalAsync();
+            await Application.Current.MainPage.Navigation.PopAsync();
         }
     }
 }

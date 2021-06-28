@@ -4,7 +4,10 @@
              x:Class="App2.App">
     <Application.Resources>
 
-
+        <Style TargetType="NavigationPage">
+            <Setter Property="BarBackgroundColor"
+                Value="DarkGray" />
+        </Style>
 
     </Application.Resources>
 </Application>
