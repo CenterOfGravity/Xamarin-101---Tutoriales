@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.View.PrimeraPaginaView">
     <NavigationPage.TitleView >
-        <Label Text="Mi Primera Aplicacion" TextColor="White" FontAttributes="Bold" FontSize="22" HorizontalTextAlignment="Center"/>
+        <Label Text="Mi Primera Aplicación" TextColor="White" FontAttributes="Bold" FontSize="22" HorizontalTextAlignment="Center"/>
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout>
