@@ -6,9 +6,23 @@
         <Label Text="Mi Primera Aplicación" TextColor="White" FontAttributes="Bold" FontSize="22" HorizontalTextAlignment="Center"/>
     </NavigationPage.TitleView>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Primera Página" FontSize="30" HorizontalTextAlignment="Center" />
-            <Button x:Name="Button1" Text="Go"  Clicked="Button1_Clicked" />
-        </StackLayout>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.35*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="Nombre: " FontSize="25" VerticalTextAlignment="Center"/>
+            <Entry x:Name="EntryParaNombre" Grid.Row="0" Grid.Column="1"  Placeholder="" FontSize="20" VerticalTextAlignment="Center" />
+
+            <Label Grid.Row="1" Grid.Column="0" Text="Apellido: " FontSize="25" VerticalTextAlignment="Center"/>
+            <Entry  x:Name="EntryParaApellido" Grid.Row="1" Grid.Column="1" Placeholder=""  FontSize="20" VerticalTextAlignment="Center"/>
+
+            <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="Go" Clicked="Button1_Clicked"  VerticalOptions="Center"/>
+        </Grid>
     </ContentPage.Content>
 </ContentPage>

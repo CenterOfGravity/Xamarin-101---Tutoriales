@@ -19,7 +19,9 @@ namespace App2.View
 
         private async void Button1_Clicked(object sender, EventArgs e)
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new SegundaPaginaView());
+            string nombre = EntryParaNombre.Text;
+            string apellido = EntryParaApellido.Text;
+            await Application.Current.MainPage.Navigation.PushAsync(new SegundaPaginaView(nombre, apellido));
         }
     }
 }

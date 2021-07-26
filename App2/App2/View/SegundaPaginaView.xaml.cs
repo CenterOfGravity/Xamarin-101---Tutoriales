@@ -12,14 +12,13 @@ namespace App2.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SegundaPaginaView : ContentPage
     {
-        public SegundaPaginaView()
+        public SegundaPaginaView(string nombre, string apellido)
         {
+            
             InitializeComponent();
+            LabelDeBienvenida.Text = "Bienvenid@ " + nombre + " " + apellido;
         }
 
-        private async void Button2_Clicked(object sender, EventArgs e)
-        {
-            await Application.Current.MainPage.Navigation.PopAsync();
-        }
+
     }
 }

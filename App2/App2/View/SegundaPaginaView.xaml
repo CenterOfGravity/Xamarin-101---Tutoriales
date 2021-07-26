@@ -3,12 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App2.View.SegundaPaginaView">
     <NavigationPage.TitleView >
-        <Label Text="Mi Primera Aplicaciín" Margin="-57,0,0,0" TextColor="White" FontAttributes="Bold" FontSize="22" HorizontalTextAlignment="Center"/>
+        <Label Text="Mi Primera Aplicación" Margin="-57,0,0,0" TextColor="White" FontAttributes="Bold" FontSize="22" HorizontalTextAlignment="Center"/>
     </NavigationPage.TitleView>
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Segunda Página" FontSize="30" HorizontalTextAlignment="Center"  />
-            <Button x:Name="Button2" Text="Regresar" Clicked="Button2_Clicked" />
+            <Label Text="" x:Name="LabelDeBienvenida" FontSize="25" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
