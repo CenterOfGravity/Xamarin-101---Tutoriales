@@ -14,15 +14,19 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
-                <RowDefinition Height="*" />
+                <RowDefinition Height="auto" />
             </Grid.RowDefinitions>
             <Label Grid.Row="0" Grid.Column="0" Text="Nombre: " FontSize="25" VerticalTextAlignment="Center"/>
-            <Entry x:Name="EntryParaNombre" Grid.Row="0" Grid.Column="1"  Placeholder="" FontSize="20" VerticalTextAlignment="Center" />
+            <Entry x:Name="EntryParaNombre" Grid.Row="0" Grid.Column="1"  Placeholder="Introduzca su nombre" FontSize="20" VerticalTextAlignment="Center" />
 
             <Label Grid.Row="1" Grid.Column="0" Text="Apellido: " FontSize="25" VerticalTextAlignment="Center"/>
-            <Entry  x:Name="EntryParaApellido" Grid.Row="1" Grid.Column="1" Placeholder=""  FontSize="20" VerticalTextAlignment="Center"/>
+            <Entry  x:Name="EntryParaApellido" Grid.Row="1" Grid.Column="1" Placeholder="Introduzca su apellido"  FontSize="20" VerticalTextAlignment="Center"/>
 
-            <Button Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Text="Go" Clicked="Button1_Clicked"  VerticalOptions="Center"/>
+            <StackLayout Orientation="Horizontal" Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" Margin="10,5,5,5">
+                <Switch IsToggled="false" x:Name="RememberMeSwith" Toggled="RememberMeSwith_Toggled" ThumbColor="Gray" Scale="1.3" />
+                <Label Text="Remember me" FontSize="15" VerticalTextAlignment="Center"/>
+            </StackLayout>
+
         </Grid>
     </ContentPage.Content>
 </ContentPage>
