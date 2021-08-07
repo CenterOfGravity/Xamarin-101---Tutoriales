@@ -1,4 +1,4 @@
-﻿using App2.View;
+﻿using App2.Views;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
