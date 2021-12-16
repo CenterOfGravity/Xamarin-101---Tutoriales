@@ -4,8 +4,9 @@
              x:Class="App2.View.PrimeraPaginaView">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Primera Página" FontSize="30" HorizontalTextAlignment="Center" />
-            <Button x:Name="Button1" Text="Go"  Clicked="Button1_Clicked" />
+            <Label x:Name="lbl_RawXmlData"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
