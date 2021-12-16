@@ -6,7 +6,7 @@
 			<provincia>Coclé</provincia>
 			<provincia>Colón</provincia>
 			<provincia>Chiriquí</provincia>
-			<provincia>Chiriquí</provincia>
+			<provincia>Darie</provincia>
 			<provincia>Chiriquí</provincia>
 			<provincia>Panamá</provincia>
 			<provincia>Panamá Oeste</provincia>
@@ -18,12 +18,11 @@
 		<Provincias id="Prov" label="Provincias">
 			<provincia>San José</provincia>
 			<provincia>Alajuela</provincia>
-			<provincia>Colón</provincia>
 			<provincia>Cartago</provincia>
 			<provincia>Heredia</provincia>
 			<provincia>Guanacaste</provincia>
 			<provincia>Puntarenas</provincia>
-			<provincia>Puntarenas</provincia>
+			<provincia>Limón</provincia>
 		</Provincias>
 	</País>
 

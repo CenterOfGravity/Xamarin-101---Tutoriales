@@ -4,9 +4,10 @@
              x:Class="App2.View.PrimeraPaginaView">
     <ContentPage.Content>
         <StackLayout>
-            <Label x:Name="lbl_RawXmlData"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Picker x:Name="Picker_Country" Title="Selecione un País" SelectedIndexChanged="Picker_Country_SelectedIndexChanged" />
+            <Picker x:Name="Picker_Provincia" Title="Selecione una Provincia" />
         </StackLayout>
+
+
     </ContentPage.Content>
 </ContentPage>
