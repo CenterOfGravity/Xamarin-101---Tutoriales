@@ -1,0 +1,68 @@
+[
+  {
+    "id": "Pa",
+    "nombre": "Panamá",
+      "provincias": [
+        "Bocas del Toro",
+        "Coclé",
+        "Colón",
+        "Chiriquí",
+        "Darie",
+        "Chiriquí",
+        "Panamá",
+        "Panamá Oeste",
+        "Veraguas"
+      ]
+  },
+  {
+    "id": "CR",
+    "nombre": "Costa Rica",
+      "provincias": [
+        "San José",
+        "Alajuela",
+        "Cartago",
+        "Heredia",
+        "Guanacaste",
+        "Puntarenas",
+        "Limón"
+      ]
+  },
+  {
+    "id": "RD",
+    "nombre": "República Dominicana",
+      "provincias": [
+        "Azua",
+        "Bahoruco",
+        "Barahona",
+        "Dajabón",
+        "Duarte",
+        "El Seibo",
+        "Elías Piña",
+        "Espaillat",
+        "Hato Mayor",
+        "Hermanas Mirabal",
+        "Independencia",
+        "La Altagracia",
+        "La Romana",
+        "La Romana",
+        "María Trinidad Sánchez",
+        "Monseñor Nouel",
+        "Monte Cristi",
+        "Monte Plata",
+        "Pedernales",
+        "Peravia",
+        "Puerto Plata",
+        "Samaná",
+        "Samaná",
+        "Samaná",
+        "San Juan",
+        "San Juan",
+        "San Juan",
+        "San Juan",
+        "Santiago Rodríguez",
+        "Santiago Rodríguez",
+        "Valverde",
+        "Distrito Nacional"
+      ]
+  }
+]
