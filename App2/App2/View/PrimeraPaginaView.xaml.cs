@@ -1,5 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Xml;
 using App2.Models;
@@ -11,43 +13,26 @@ namespace App2.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PrimeraPaginaView : ContentPage
-    {
-        XmlNodeList CountryNodeList, ProvinciasNodeList, ProvinciaNodeList; 
+    { 
+        Dictionary<string, string[]> CountryInfoDictionary = new Dictionary<string, string[]>();
         public PrimeraPaginaView()
         {
             InitializeComponent();
             var assembly = IntrospectionExtensions.GetTypeInfo(typeof(PrimeraPaginaView)).Assembly;
-            Stream stream = assembly.GetManifestResourceStream("App2.InformacionEnJson.json");
-            InformacionDePaisesClassModel Informacion;
-            string ReadData;
-            using (var streamReader = new StreamReader(stream))
+            Stream stream = assembly.GetManifestResourceStream("App2.CountryInfoInJson.json");
+            var streamReader = new StreamReader(stream).ReadToEnd();       
+            
+            List<CountryInfoClassModel> DeserializeInfoList = JsonConvert.DeserializeObject< List<CountryInfoClassModel>>(streamReader);
+            foreach (var info in DeserializeInfoList)
             {
-                ReadData = streamReader.ReadToEnd();
+                CountryInfoDictionary.Add(info.nombre, info.provincias);
             }
-             Informacion = JsonConvert.DeserializeObject<InformacionDePaisesClassModel>(ReadData);
-
-            name.Text = Informacion.PaisesInfo.ToString();
-            //List<string> countryNameDataList = new List<string>();
-            foreach (var info in Informacion.PaisesInfo)
-            {
-             //   countryNameDataList.Add(country.Attributes["label"].Value);
-            }
-      //      Picker_Country.ItemsSource = countryNameDataList;
+            Picker_Country.ItemsSource = CountryInfoDictionary.Keys.ToList();
         }
 
         private void Picker_Country_SelectedIndexChanged(object sender, System.EventArgs e)
         {
-            //XmlElement CountryElements = (XmlElement)CountryNodeList[Picker_Country.SelectedIndex];
-            //ProvinciasNodeList = CountryElements.GetElementsByTagName("Provincias");
-            //XmlElement ProvinciasElements = (XmlElement)ProvinciasNodeList[0];
-            //ProvinciaNodeList = ProvinciasElements.GetElementsByTagName("provincia");
-
-            //List<string> ProvinciaNameDataList = new List<string>();
-            //foreach (XmlNode provincia in ProvinciaNodeList)
-            //{
-            //    ProvinciaNameDataList.Add(provincia.InnerText);
-            //}
-            //Picker_Provincia.ItemsSource = ProvinciaNameDataList;
+           Picker_Provincia.ItemsSource = CountryInfoDictionary[Picker_Country.SelectedItem.ToString()].ToList();
         }
     }
 }

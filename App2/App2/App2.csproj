@@ -11,11 +11,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="InformacionEnJson.json" />
+    <None Remove="CountryInfoInJson.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="InformacionEnJson.json" />
+    <EmbeddedResource Include="CountryInfoInJson.json" />
   </ItemGroup>
 
   <ItemGroup>
