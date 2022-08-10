@@ -6,8 +6,9 @@
         <StackLayout>
             <Picker x:Name="Picker_Country" Title="Selecione un País" SelectedIndexChanged="Picker_Country_SelectedIndexChanged" />
             <Picker x:Name="Picker_Provincia" Title="Selecione una Provincia" />
-        </StackLayout>
+            <Label x:Name="name" Text="" />
 
+        </StackLayout>
 
     </ContentPage.Content>
 </ContentPage>
