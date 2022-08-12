@@ -8,6 +8,6 @@ namespace App2.Models
     {
         public string id { get; set; }
         public string nombre { get; set; }
-        public string[] provincias { get; set; }
+        public string [] provincias { get; set; }
     }
 }
